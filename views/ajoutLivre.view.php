@@ -15,7 +15,7 @@ ob_start()
         <label for="image">Image : </label>
         <input type="file" class="form-control-file" id="image" name="image">
     </div><br>
-    <button type="submit" class="btn btn-primary">Valider</button>
+    <button type="submit" class="btn btn-outline-light">Valider</button>
 </form>
 
 <?php 

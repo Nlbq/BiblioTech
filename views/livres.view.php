@@ -17,10 +17,10 @@ ob_start()
         <td class="align-middle" ><a href="<?= URL ?>livres/l/<?= $livres[$i]->getId(); ?>"><img src="public/img/<?= $livres[$i]->getImage() ?>" id="book-img" alt="book-cover"></a></td>
         <td class="align-middle"><a href="<?= URL ?>livres/l/<?= $livres[$i]->getId(); ?>"><?= $livres[$i]->getTitre(); ?></a></td>
         <td class="align-middle"><?= $livres[$i]->getNbPages(); ?></td>
-        <td class="align-middle"><a href="#" class="btn btn-outline-light book-update">Modifier</a></td>
+        <td class="align-middle"><a href="<?= URL ?>livres/m/<?= $livres[$i]->getId(); ?>" class="btn btn-outline-light book-update">Modifier</a></td>
         <td class="align-middle">
             <form method="POST" action="<?= URL ?>livres/s/<?= $livres[$i]->getId(); ?>" onSubmit="return confirm('Voulez-vous vraiment supprimer le livre ?');">
-                <button class="btn btn-danger" type="submit">Supprimer</button>
+                <button class="btn btn-outline-light book-delete" type="submit">Supprimer</button>
             </form>
         </td>
     </tr>

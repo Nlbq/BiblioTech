@@ -38,6 +38,26 @@ class LivreController{
         header('Location: '. URL . "livres");
     }
 
+    public function modificationLivre($id){
+        $livre = $this->livreManager->getLivreById($id);
+        require "views/modifierLivre.view.php";
+    }
+
+    public function modificationLivreValidation(){
+        $imageActuelle = $this->livreManager->getLivreById($_POST['identifiant'])->getImage();
+        $file = $_FILES['image'];
+
+        if($file['size'] > 0){
+            unlink("public/img/".$imageActuelle);
+            $repertoire = "public/img/";
+            $nomImageToAdd = $this->ajoutImage($file,$repertoire);
+        } else {
+            $nomImageToAdd = $imageActuelle;
+        }
+        $this->livreManager->modificationLivreBDD($_POST['identifiant'],$_POST['titre'],$_POST['nbPages'],$nomImageToAdd);
+        header('Location: '. URL . "livres");
+    }
+
 
     private function ajoutImage($file, $dir){
         if(!isset($file['name']) || empty($file['name']))
