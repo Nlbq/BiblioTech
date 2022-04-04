@@ -11,21 +11,21 @@ class LivreController{
 
     public function afficherLivres(){
         $livres = $this->livreManager->getLivres();
-        require "views/livres.view.php";
+        require "views/livres/livres.view.php";
     }
 
     public function afficherLivre($id){
        $livre = $this->livreManager->getLivreById($id);
-       require "views/afficherLivre.view.php";
+       require "views/livres/afficherLivre.view.php";
     }
 
     public function ajoutLivre(){
-        require "views/ajoutLivre.view.php";
+        require "views/livres/ajoutLivre.view.php";
     }
 
     public function ajoutLivreValidation(){
         $file = $_FILES['image'];
-        $repertoire = "public/img/";
+        $repertoire = "public/imgLivres/";
         $nomImageAjoute = $this->ajoutImage($file,$repertoire);
         $this->livreManager->ajoutLivreBdd($_POST['titre'],$_POST['nbPages'],$nomImageAjoute);
         header('Location: '. URL . "livres");
@@ -33,14 +33,14 @@ class LivreController{
 
     public function suppressionLivre($id){
         $nomImage = $this->livreManager->getLivreById($id)->getImage();
-        unlink("public/img/".$nomImage);
+        unlink("public/imgLivres/".$nomImage);
         $this->livreManager->suppressionLivreBDD($id);
         header('Location: '. URL . "livres");
     }
 
     public function modificationLivre($id){
         $livre = $this->livreManager->getLivreById($id);
-        require "views/modifierLivre.view.php";
+        require "views/livres/modifierLivre.view.php";
     }
 
     public function modificationLivreValidation(){
@@ -48,8 +48,8 @@ class LivreController{
         $file = $_FILES['image'];
 
         if($file['size'] > 0){
-            unlink("public/img/".$imageActuelle);
-            $repertoire = "public/img/";
+            unlink("public/imgLivres/".$imageActuelle);
+            $repertoire = "public/imgLivres/";
             $nomImageToAdd = $this->ajoutImage($file,$repertoire);
         } else {
             $nomImageToAdd = $imageActuelle;

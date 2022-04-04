@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    color: #fff;
+    font-size: 22px;
+}
+span{
+    color: #6ac76a;
+    font-weight: 500;
+    font-size: 22px;
+}
+.titre-page{
+    font-size: 30px;
+    border: 1px solid #6ac76a;
+}
+.livre-img{
+    width: 20%;
+}
+.back-books{
+    color: #fff;
+    font-size: 18px;
+    background-color: #44494e !important;
+    border-bottom: 1px solid #6ac76a !important;  
+}
+.back-books:hover{
+    background-color: #272b30 !important;
+    border-bottom: 1px solid #6ac76a !important;  
+    color: #fff;
+}
+@media screen and (max-width:500px){
+    .titre-page{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+    span{
+        font-weight: 400;
+        font-size: 16px; 
+    }
+    .livre-img{
+        width: 40%;
+    }
+    .back-books{
+        padding: 5px !important;
+        font-size: 14px;
+    }
+}

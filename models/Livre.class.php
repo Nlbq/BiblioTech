@@ -4,6 +4,7 @@ class Livre{
     private $titre;
     private $nbPages;
     private $image;
+    
 
     public function __construct($id, $titre, $nbPages, $image){
         $this->id = $id;

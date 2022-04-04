@@ -1,0 +1,91 @@
+.container {
+    min-height: 90vh;
+}
+input{
+    padding: 7px !important;
+}
+.titre-modif-serie,
+.titre-annee-sortie-modif-serie,
+.titre-image-modif-serie,
+.titre-nombre-saison-ajout-serie,
+.titre-changer-image-modif-serie,
+.titre-note-ajout-serie{
+    border-bottom: solid 1px #ef6763;
+}
+.titre-page{
+    border: 1px solid #ef6763;
+}
+.image-modif-serie{
+    width: 10%;
+}
+.btn-validation-modif-serie{
+    color: #72c972;
+    background-color: #44494e !important;
+    border-bottom: 1px solid #ef6763 !important;  
+}
+.btn-validation-modif-serie:hover{
+    color: #4faf4f;
+    background-color: #32363b !important;
+    border-bottom: 1px solid #ef6763 !important;
+}
+
+@media screen and (max-width:500px){
+    .titre-page{
+        font-size: 12px;
+        font-weight: 600;
+        margin: 6% 0 3% 0 !important;
+    }
+    .titre-modif-serie{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .titre-input-modif-serie{
+        padding: 3px !important;
+        font-size: 10px;
+    }
+    .titre-nombre-saison-ajout-serie{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .nombre-saison-input-ajout-serie{
+        padding: 3px !important;
+        font-size: 10px;
+    }
+
+    .titre-annee-sortie-modif-serie{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .annee-sortie-input-modif-serie{
+        padding: 3px !important;
+        font-size: 10px;
+    }
+
+    .titre-image-modif-serie{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .titre-changer-image-modif-serie{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .changer-image-input-modif-serie{
+        padding: 0px !important;
+        font-size: 10px;
+    }
+    .image-modif-serie{
+        width: 25%;
+    }
+    .titre-note-ajout-serie{
+        font-size: 12px;
+    }
+    .note-input-ajout-serie{
+        padding: 3px !important;
+        font-size: 10px;
+    }
+    .btn-validation-modif-serie{
+        font-size: 10px;
+        font-weight: bold;
+        padding: 7px 12px 7px 12px;
+    }
+}

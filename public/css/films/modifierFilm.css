@@ -1,0 +1,81 @@
+.container {
+    min-height: 90vh;
+}
+.titre-modif-film,
+.titre-annee-sortie-modif-film,
+.titre-image-modif-film,
+.titre-changer-image-modif-film,
+.titre-note-ajout-film
+{
+    border-bottom: solid 1px #f89913;
+}
+.titre-page{
+    border: 1px solid #f89913;
+}
+.image-modif-film{
+    width: 12%;
+}
+
+.btn-validation-modif-film{
+    color: #72c972;
+    background-color: #44494e !important;
+    border-bottom: 1px solid #f89913 !important;
+}
+.btn-validation-modif-film:hover{
+    color: #4faf4f;
+    background-color: #32363b !important;
+    border-bottom: 1px solid #f89913 !important;
+}
+
+@media screen and (max-width:500px){
+    .titre-page{
+        font-size: 12px;
+        font-weight: 600;
+        margin: 6% 0 3% 0 !important;
+    }
+    .titre-modif-film{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .titre-input-modif-film{
+        padding: 3px !important;
+        font-size: 9px;
+    }
+
+    .titre-annee-sortie-modif-film{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .annee-sortie-input-modif-film{
+        padding: 3px !important;
+        font-size: 9px;
+    }
+
+    .titre-image-modif-film{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .titre-changer-image-modif-film{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .changer-image-input-modif-film{
+        padding: 0px !important;
+        font-size: 9px;
+    }
+    .image-modif-film{
+        width: 25%;
+    }
+    .titre-note-ajout-film{
+        font-size: 10px;
+    }
+    .note-input-ajout-film{
+        padding: 3px !important;
+        font-size: 9px;
+    }
+    .btn-validation-modif-film{
+        font-size: 10px;
+        font-weight: bold;
+        padding: 7px 12px 7px 12px;
+    }
+}

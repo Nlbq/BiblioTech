@@ -79,8 +79,8 @@ class LivreManager extends Model{
 
         if($resultat > 0){
             $this->getLivreById($id)->setTitre($titre);
-            $this->getLivreById($id)->setTitre($nbPages);
-            $this->getLivreById($id)->setTitre($image);
+            $this->getLivreById($id)->setNbPages($nbPages);
+            $this->getLivreById($id)->setImage($image);
         }
     }
 }

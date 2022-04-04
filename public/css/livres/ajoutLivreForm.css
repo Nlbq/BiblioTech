@@ -1,0 +1,63 @@
+.titre-ajout,
+.titre-nombre-pages-ajout,
+.titre-image-ajout{
+    border-bottom: solid 1px #6dc86d;
+}
+.titre-page{
+    border: 1px solid #6dc86d;
+}
+.btn-validation-ajout{
+    color: #72c972;
+    background-color: #44494e !important;
+    border-bottom: 1px solid #6dc86d !important;
+
+    /* border-color: #44494e !important;     */
+}
+.btn-validation-ajout:hover{
+    color: #4faf4f;
+    background-color: #32363b !important;
+    border-bottom: 1px solid #6dc86d !important;
+
+    /* border-color: #44494e !important; */
+}
+
+@media screen and (max-width:500px){
+    .titre-page{
+        font-size: 12px;
+        font-weight: 600;
+        margin: 20px 0 15px 0 !important;
+    }
+
+    .titre-ajout{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .titre-input-ajout{
+        padding: 5px !important;
+        font-size: 10px;
+    }
+
+    .titre-nombre-pages-ajout{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .nombre-pages-input-ajout{
+        padding: 5px !important;
+        font-size: 10px;
+    }
+
+    .titre-image-ajout{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .image-input-ajout{
+        padding: 0px !important;
+        font-size: 10px;
+    }
+
+    .btn-validation-ajout{
+        font-size: 15px;
+        font-weight: 600;
+        padding: 7px 12px 7px 12px;
+    }
+}

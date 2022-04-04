@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.tableau-livres{
+    height: 70vh;
+    overflow: auto;
+    border-radius: 5px;
+    scrollbar-color: #72767a #44494e ;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #44494e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #72767a;
+    border-radius: 20px;
+    border: 3px solid #72767a;
+}
+.titre-page{
+    border: 1px solid #6ac76a;
+}
+.table th{
+    position: sticky;
+    top: 0;
+}
+
+#book-img{
+    width: 60%;
+}
+
+.titre-livre-liste{
+    font-size: 18px;
+}
+
+.book-update{
+    color: #ffc107;
+    background-color: #44494e !important;
+    border-color: #44494e !important;
+    font-size: 16px;
+}
+.book-update:hover{
+    color: #ffda6d;
+    background-color: #272b30 !important;
+    border-bottom: 1px solid #6ac76a !important;
+}
+
+.book-delete{
+    color: #e05c69;
+    background-color: #44494e !important;
+    border-color: #44494e !important;
+    font-size: 16px;
+}
+
+.book-delete:hover{
+    color: #d43848;
+    background-color: #272b30 !important;
+    border-bottom: 1px solid #6ac76a !important;  
+}
+
+.book-add{
+    color: #6ac76a;
+    background-color: #44494e !important;
+    border-bottom: 1px solid #6ac76a !important;
+}
+.book-add:hover{
+    color: #6ac76a;
+    background-color: #32363b !important;
+    border-bottom: 1px solid #6ac76a !important;
+}
+
+@media screen and (max-width:500px){
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+    body{
+        height: 90vh;
+    }
+    .tableau-livres{
+        height: 60vh;
+        overflow: auto;
+        margin: 0 5px 5px 5px;
+    }
+    .table th{
+        position: sticky;
+        top: 0;
+    }
+    .titre-page{
+        margin: 15px 0 20px 0 !important;
+    }
+    .container{
+        padding: 0 3px 0 3px !important;
+    }
+    th{
+        font-size: 8px;
+    }
+    td{
+        line-height: .5rem;
+    }
+    #book-img{
+        width: 70%;
+    }
+    .image-liste-livres{
+        padding: 5px 0 5px 0 !important;
+    }
+    .nombre-pages{
+        font-size: 8px;
+        padding: 0 !important;
+    }
+    .book-update{
+        font-size: 6px;
+        font-weight: bold;
+        width: 90%;
+        padding: 5px 10px 5px 7px !important;
+    }
+    .modifier-btn{
+        padding: 0 !important;
+    }
+    .book-delete{
+        font-size: 6px;
+        font-weight: bold;
+        width: 90%;
+        padding: 5px 10px 5px 7px;
+    }
+    .supprimer-btn{
+        padding: 0 !important;
+    }
+    .book-add{
+        font-size: 10px;
+        padding: 7px 12px 7px 12px;
+    }
+    .titre-livre-liste{
+        font-size: 8px;
+        line-height: .5rem;
+    }
+    .titre-liste{
+        padding:  5px 4px 5px 4px !important;
+    }
+    .titre-page{
+        font-size: 15px;
+    }
+
+
+}

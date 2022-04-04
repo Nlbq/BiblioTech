@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.livres-nav{
+    border-bottom: 1px solid #6ac76a;
+}
+.films-nav{
+    border-bottom: 1px solid #f89913;
+}
+.series-nav{
+    border-bottom: 1px solid #ef6763;
+}
+.erreur-msg{
+    font-size: 20px;
+    color: #fff;
+}
+.retour-erreur {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #44494e !important;
+    border: 1px solid #f5f5f5 !important;
+    border-radius: 4px;
+}
+.retour-erreur:hover{
+    color: #f5f5f5;
+    background-color: #32363b !important;
+}
+
+@media screen and (max-width:500px){
+    
+    .titre-page{
+        margin: 15px 0 15px 0 !important;
+    }
+}
