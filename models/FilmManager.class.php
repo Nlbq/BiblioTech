@@ -31,6 +31,8 @@ class FilmManager extends Model{
                 return $this->films[$i];
             }
         }
+        throw new Exception("Le film n'existe pas");
+
     }
 
     public function ajoutFilmBdd($titreFilm,$anneeSortie,$imageFilm,$noteFilm){

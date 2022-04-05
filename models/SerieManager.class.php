@@ -31,6 +31,7 @@ class SerieManager extends Model{
                 return $this->series[$i];
             }
         }
+        throw new Exception("La série n'existe pas");
     }
 
     public function ajoutSerieBdd($titreSerie,$nbSaison,$anneeSortieSerie,$imageSerie,$noteSerie){
@@ -89,7 +90,6 @@ class SerieManager extends Model{
             $this->getSerieById($id)->setAnneeSortieSerie($anneeSortieSerie);
             $this->getSerieById($id)->setImageSerie($imageSerie);
             $this->getSerieById($id)->setNoteSerie($noteSerie);
-
         }
     }
 }

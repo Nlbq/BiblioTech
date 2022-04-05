@@ -31,6 +31,7 @@ class LivreManager extends Model{
                 return $this->livres[$i];
             }
         }
+        throw new Exception("Le livre n'existe pas");
     }
 
     public function ajoutLivreBdd($titre, $nbPages,$image){
