@@ -5,7 +5,7 @@ body{
 .tableau-livres{
     height: 70vh;
     overflow: auto;
-    border-radius: 5px;
+    border-radius: 2px;
     scrollbar-color: #72767a #44494e ;
     scrollbar-width: thin;
 }
@@ -92,9 +92,6 @@ body{
     }
     .titre-page{
         margin: 15px 0 20px 0 !important;
-    }
-    .container{
-        padding: 0 3px 0 3px !important;
     }
     th{
         font-size: 8px;

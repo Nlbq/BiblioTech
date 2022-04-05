@@ -7,13 +7,13 @@ ob_start()
 </style>
 
 <div class="tableau-series">
-    <table class="table text-center border-secondary rounded pb-3">
+    <table class="table text-center border-secondary pb-3">
         <tr class="table-primary mb-5">
             <th>Image</th>
             <th>Titre</th>
             <th>Saisons</th>
             <th>Année</th>
-            <th>Note/10</th>
+            <th>Note</th>
             <th colspan="2">Actions</th>
         </tr>
         <?php

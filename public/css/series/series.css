@@ -2,16 +2,15 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-
 .tableau-series{
     height: 70vh;
     overflow: auto;
-    border-radius: 5px;
+    border-radius: 2px;
     scrollbar-color: #72767a #44494e ;
     scrollbar-width: thin;
 }
 *::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 *::-webkit-scrollbar-track {
     background-color: #44494e;
@@ -27,7 +26,6 @@ body{
     position: sticky;
     top: 0;
 }
-
 #serie-img{
     width: 60%;
 }
@@ -75,20 +73,15 @@ body{
 }
 
 @media screen and (max-width:500px){
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
     .tableau-series{
         height: 60vh;
-        overflow: auto;
     }
-    /* .titre-page{
-        margin: 15px 0 15px 0 !important;
-    } */
-    /* .container{
-        padding: 0 3px 0 3px !important;
-    } */
     th{
         font-size: 6px;
-        font-weight: bold;
-        padding: 3px 3px !important;
+        padding: 5px 3px !important;
     }
     td{
         line-height: .5rem;
@@ -100,16 +93,14 @@ body{
         padding: 5px 0 5px 0 !important;
     }
     .annee-sortie-series, .note-series{
-        font-size: 8px;
+        font-size: 7px;
         padding: 0 !important;
     }
     .serie-update{
         font-size: 6px;
         font-weight: bold;
         width: 90%;
-        /* padding: 5px 15px 5px 10px; */
         padding: 3px 10px 3px 7px;
-
     }
     .modifier-btn{
         padding: 0 !important;
@@ -137,6 +128,7 @@ body{
     .titre-page{
         font-size: 15px;
     }
-
-
+    .nbSaison{
+        font-size: 7px;
+    }
 }

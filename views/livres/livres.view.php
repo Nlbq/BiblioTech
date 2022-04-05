@@ -16,7 +16,6 @@ ob_start()
         </tr>
         
         <?php
-        
         for($i=0; $i < count($livres); $i++) : 
             ?>
         <tr>

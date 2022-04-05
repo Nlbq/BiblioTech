@@ -1,17 +1,12 @@
 <?php
 define ("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" : "http"). "://$_SERVER[HTTP_HOST]$_SERVER[PHP_SELF]"));
 
-
 require_once "controllers/LivreController.controller.php";
 $livreController = new LivreController;
-
 require_once "controllers/FilmController.controller.php";
 $filmController = new FilmController;
-
 require_once "controllers/SerieController.controller.php";
 $serieController = new SerieController;
-
-
 
 try{
     if(empty($_GET['page'] )){

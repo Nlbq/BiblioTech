@@ -7,7 +7,7 @@ ob_start()
 </style>
 
 <div class="tableau-films">
-    <table class="table text-center border-secondary rounded pb-3">
+    <table class="table text-center border-secondary pb-3">
         <tr class="table-primary mb-5">
             <th>Image</th>
             <th>Titre</th>
